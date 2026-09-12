@@ -1,0 +1,1 @@
+<div style="display: flex; align-items: center; gap: 8px;"><img src="{{ asset('images/logo.png') }}" alt="The Boss" style="height: 40px; width: auto; object-fit: contain; filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04));"><span style="font-family: serif; font-size: 1.25rem; letter-spacing: 0.1em; color: #c59d5f; text-transform: uppercase; font-weight: 300;">The Boss</span></div>

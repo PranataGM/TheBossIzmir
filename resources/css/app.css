@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@source '../../storage/framework/views/*.php';
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F3E5AB;
+}
