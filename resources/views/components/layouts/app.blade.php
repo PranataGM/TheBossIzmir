@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth scroll-pt-24">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="description" content="The Boss Hookah & Lounge - Dünya mutfağından seçkin tatlar, imza kokteyller ve premium nargile deneyimi. Bornova, İzmir.">
         <title>{{ $title ?? 'The Boss Hookah & Lounge' }}</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -14,20 +14,53 @@
     <body class="bg-black text-gray-100 antialiased flex flex-col min-h-screen font-sans selection:bg-gold selection:text-black">
         
         <!-- Navbar -->
-        <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-700 ease-in-out py-6 bg-transparent border-b border-transparent">
+        <nav x-data="{ mobileMenuOpen: false }" id="navbar" class="fixed w-full top-0 z-50 transition-all duration-700 ease-in-out py-3 md:py-6 bg-transparent border-b border-transparent">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-16">
                     <div class="flex items-center">
                         <a href="{{ route('home') }}" aria-label="Anasayfa" class="flex items-center gap-3 transition-transform duration-500 hover:scale-105 active:scale-95">
-                            <img src="{{ asset('images/logo.png') }}" alt="The Boss Hookah & Lounge" width="120" height="64" class="h-16 w-auto object-contain drop-shadow-xl">
+                            <img src="{{ asset('images/logo.png') }}" alt="The Boss Hookah & Lounge" width="120" height="64" class="h-12 md:h-16 w-auto object-contain drop-shadow-xl">
                         </a>
                     </div>
+                    
+                    <!-- Desktop Menu -->
                     <div class="hidden md:flex items-center space-x-10 text-xs uppercase tracking-[0.2em] font-light">
                         <a href="{{ route('home') }}" class="text-white hover:text-gold transition-colors duration-500">Anasayfa</a>
                         <a href="{{ route('home') }}#hakkimizda" class="text-white hover:text-gold transition-colors duration-500">Hakkımızda</a>
                         <a href="{{ route('menu') }}" class="text-white hover:text-gold transition-colors duration-500">Menü</a>
                         <a href="{{ route('home') }}#rezervasyon" class="text-white hover:text-gold transition-colors duration-500">İletişim</a>
                     </div>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="flex md:hidden items-center">
+                        <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="text-white hover:text-gold focus:outline-none transition-colors duration-300">
+                            <svg class="h-8 w-8" x-show="!mobileMenuOpen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                            <svg class="h-8 w-8" x-show="mobileMenuOpen" style="display: none;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Dropdown -->
+            <div x-show="mobileMenuOpen" 
+                 x-transition:enter="transition ease-out duration-300"
+                 x-transition:enter-start="opacity-0 -translate-y-4"
+                 x-transition:enter-end="opacity-100 translate-y-0"
+                 x-transition:leave="transition ease-in duration-300"
+                 x-transition:leave-start="opacity-100 translate-y-0"
+                 x-transition:leave-end="opacity-0 -translate-y-4"
+                 @click.outside="mobileMenuOpen = false"
+                 style="display: none;"
+                 class="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-md border-b border-white/10 shadow-2xl">
+                <div class="flex flex-col px-4 pt-4 pb-8 space-y-6 text-xs uppercase tracking-[0.2em] font-light text-center">
+                    <a @click="mobileMenuOpen = false" href="{{ route('home') }}" class="text-white hover:text-gold transition-colors duration-300 block">Anasayfa</a>
+                    <a @click="mobileMenuOpen = false" href="{{ route('home') }}#hakkimizda" class="text-white hover:text-gold transition-colors duration-300 block">Hakkımızda</a>
+                    <a @click="mobileMenuOpen = false" href="{{ route('menu') }}" class="text-white hover:text-gold transition-colors duration-300 block">Menü</a>
+                    <a @click="mobileMenuOpen = false" href="{{ route('home') }}#rezervasyon" class="text-white hover:text-gold transition-colors duration-300 block">İletişim</a>
                 </div>
             </div>
         </nav>

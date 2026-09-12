@@ -1,6 +1,6 @@
 <x-layouts.app>
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#050505]">
+    <section class="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#050505]">
         <div class="absolute inset-0 z-0" id="hero-slider">
             <img src="{{ isset($settings['hero_image_1']) ? asset('storage/' . $settings['hero_image_1']) : 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80' }}" alt="Lounge 1" class="hero-slide w-full h-full object-cover opacity-40 transition-opacity duration-1000 absolute inset-0">
             <img src="{{ isset($settings['hero_image_2']) ? asset('storage/' . $settings['hero_image_2']) : 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80' }}" alt="Lounge 2" class="hero-slide w-full h-full object-cover opacity-0 transition-opacity duration-1000 absolute inset-0">
@@ -16,7 +16,7 @@
             <span class="text-gold tracking-[0.4em] text-sm md:text-base font-semibold uppercase mb-6 block drop-shadow-md">
                 The Boss Hookah & Lounge'a
             </span>
-            <h1 class="font-serif text-7xl md:text-9xl text-white mb-8 leading-tight font-light tracking-wide drop-shadow-2xl">
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-9xl text-white mb-8 leading-tight font-light tracking-wide drop-shadow-2xl">
                 <span class="italic font-medium text-gold">Hoşgeldiniz</span>
             </h1>
             <p class="text-zinc-300 text-lg md:text-2xl font-light mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow">
@@ -87,7 +87,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="hakkimizda" class="min-h-[80vh] flex items-center justify-center py-20 bg-black">
+    <section id="hakkimizda" class="relative min-h-[80vh] flex items-center justify-center py-20 bg-black overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                 <div class="relative">
@@ -96,18 +96,7 @@
                     </div>
                     <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
                 </div>
-                <div>
-                    <span class="text-gold tracking-[0.2em] text-xs font-semibold uppercase mb-4 block">Hakkımızda</span>
-                    <h2 class="font-serif text-4xl md:text-5xl text-white mb-8 font-light">İzmir'in En Prestijli <br><span class="italic text-gold">Nargile & Lounge</span> Deneyimi</h2>
-                    <div class="space-y-6 text-zinc-400 font-light leading-relaxed">
-                        <p>
-                            The Boss Hookah & Lounge, standartların ötesinde bir deneyim arayanlar için tasarlandı. Modern mimarisi, VIP oyun alanları ve seçkin menüsüyle Bornova'da lüksün yeni adresi.
-                        </p>
-                        <p>
-                            Dünyanın dört bir yanından özenle seçilmiş premium tütünlerimiz, alanında uzman nargile şeflerimizin sihirli dokunuşlarıyla eşsiz bir keyfe dönüşüyor.
-                        </p>
-                    </div>
-                    <div class="mt-12 flex gap-8">
+                    <div class="mt-12 flex gap-8 justify-center w-full">
                         <div>
                             <p class="text-4xl font-serif text-gold mb-2">10+</p>
                             <p class="text-xs uppercase tracking-widest text-zinc-500">Premium Marka</p>
@@ -124,9 +113,9 @@
 
     <!-- Menu Preview Section -->
     @if(isset($categories) && $categories->count() > 0)
-    <section id="menu-section" class="min-h-[80vh] flex flex-col justify-center py-20 bg-[#050505] border-y border-white/5">
+    <section id="menu-section" class="relative min-h-[80vh] flex flex-col justify-center py-20 bg-[#050505] border-y border-white/5 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+            <div class="flex flex-col items-center text-center mb-16 gap-8">
                 <div>
                     <span class="text-gold tracking-[0.2em] text-xs font-semibold uppercase mb-4 block">Özel Lezzetler</span>
                     <h2 class="font-serif text-4xl md:text-5xl text-white font-light">İmza <span class="italic text-gold">Tatlarımız</span></h2>
@@ -223,13 +212,22 @@
     @endif
 
     <!-- Barista / Team Section -->
-    <section id="ekibimiz" class="min-h-[80vh] flex items-center justify-center py-20 bg-[#050505]">
+    <section id="ekibimiz" class="relative min-h-[80vh] flex items-center justify-center py-20 bg-[#050505] overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                <!-- Text (Left) -->
-                <div class="order-2 lg:order-1">
-                    <span class="text-gold tracking-[0.2em] text-xs font-semibold uppercase mb-4 block">Ustalık ve Sanat</span>
-                    <h2 class="font-serif text-4xl md:text-5xl text-white mb-8 font-light">Baş Baristamızın <br><span class="italic text-gold">Özel Dokunuşu</span></h2>
+            <div class="text-center flex flex-col items-center mb-16">
+                <span class="text-gold tracking-[0.2em] text-xs font-semibold uppercase mb-4 block">Ustalık ve Sanat</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-white font-light">Baş Baristamızın <br><span class="italic text-gold">Özel Dokunuşu</span></h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="order-1 relative w-full flex justify-center">
+                    <div class="aspect-[2/3] w-full max-w-[320px] lg:max-w-[360px] relative rounded-2xl overflow-hidden shadow-2xl border border-white/5">
+                        <img src="{{ isset($settings['barista_image']) ? asset('storage/' . $settings['barista_image']) : 'https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80' }}" alt="Baş Barista" class="w-full h-full object-cover transition-all duration-700">
+                    </div>
+                    <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+                </div>
+
+                <div class="order-2 text-center flex flex-col items-center">
                     <div class="space-y-6 text-zinc-400 font-light leading-relaxed">
                         <p>
                             Her bir içecek ve kokteylimiz, baristalarımızın tutkusu ve yıllara dayanan deneyimiyle hazırlanır. Sadece en kaliteli çekirdekleri ve malzemeleri kullanarak, her yudumda The Boss farkını hissetmenizi sağlıyoruz.
@@ -239,19 +237,12 @@
                         </p>
                     </div>
                 </div>
-                
-                <div class="order-1 lg:order-2 relative w-full flex justify-center">
-                    <div class="aspect-[2/3] w-full max-w-[320px] lg:max-w-[360px] relative rounded-2xl overflow-hidden shadow-2xl border border-white/5">
-                        <img src="{{ isset($settings['barista_image']) ? asset('storage/' . $settings['barista_image']) : 'https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80' }}" alt="Baş Barista" class="w-full h-full object-cover transition-all duration-700">
-                    </div>
-                    <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact / Location -->
-    <section id="rezervasyon" class="min-h-[80vh] flex items-center justify-center py-20 bg-[#0a0a0a]">
+    <section id="rezervasyon" class="relative min-h-[80vh] flex items-center justify-center py-20 bg-[#0a0a0a] overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
                 <div class="order-2 md:order-1 h-[500px] w-full border border-white/5 p-2 rounded-xl overflow-hidden bg-black/50">
@@ -264,11 +255,11 @@
                     @endif
                 </div>
                 
-                <div class="order-1 md:order-2">
+                <div class="order-1 md:order-2 text-center flex flex-col items-center">
                     <span class="text-gold tracking-[0.3em] uppercase text-xs mb-4 block">İletişim</span>
                     <h2 class="font-serif text-4xl text-white tracking-widest uppercase font-light mb-12">Bize Ulaşın</h2>
                     
-                    <div class="space-y-10">
+                    <div class="space-y-10 text-center flex flex-col items-center">
                         <div>
                             <h4 class="text-gray-500 font-light tracking-[0.2em] text-xs uppercase mb-2">Telefon / Rezervasyon</h4>
                             <p class="text-white font-light text-2xl tracking-wider">
@@ -287,7 +278,7 @@
                             </p>
                         </div>
 
-                        <div class="pt-8 flex gap-8">
+                        <div class="pt-8 flex justify-center gap-8 w-full">
                             @if(isset($settings['instagram_url']))
                                 <a href="{{ $settings['instagram_url'] }}" target="_blank" class="text-gray-500 hover:text-gold transition-colors duration-300 uppercase tracking-[0.2em] text-sm font-light">
                                     Instagram
