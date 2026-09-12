@@ -3,8 +3,8 @@
     <section class="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#050505]">
         <div class="absolute inset-0 z-0" id="hero-slider">
             <img src="{{ isset($settings['hero_image_1']) ? asset('storage/' . $settings['hero_image_1']) : 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80' }}" alt="Lounge 1" class="hero-slide w-full h-full object-cover opacity-40 transition-opacity duration-1000 absolute inset-0">
-            <img src="{{ isset($settings['hero_image_2']) ? asset('storage/' . $settings['hero_image_2']) : 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80' }}" alt="Lounge 2" class="hero-slide w-full h-full object-cover opacity-0 transition-opacity duration-1000 absolute inset-0">
-            <img src="{{ isset($settings['hero_image_3']) ? asset('storage/' . $settings['hero_image_3']) : 'https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80' }}" alt="Lounge 3" class="hero-slide w-full h-full object-cover opacity-0 transition-opacity duration-1000 absolute inset-0">
+            <img loading="lazy" src="{{ isset($settings['hero_image_2']) ? asset('storage/' . $settings['hero_image_2']) : 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80' }}" alt="Lounge 2" class="hero-slide w-full h-full object-cover opacity-0 transition-opacity duration-1000 absolute inset-0">
+            <img loading="lazy" src="{{ isset($settings['hero_image_3']) ? asset('storage/' . $settings['hero_image_3']) : 'https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80' }}" alt="Lounge 3" class="hero-slide w-full h-full object-cover opacity-0 transition-opacity duration-1000 absolute inset-0">
             
             <!-- Darken the top for navbar readability -->
             <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent z-10"></div>
@@ -92,7 +92,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                 <div class="relative">
                     <div class="aspect-[4/3] relative rounded-2xl overflow-hidden shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1543007631-283050bb3e8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="About Us" class="w-full h-full object-cover">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1543007631-283050bb3e8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="About Us" class="w-full h-full object-cover">
                     </div>
                     <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
                 </div>
@@ -135,7 +135,7 @@
                                 <div class="group flex items-start gap-5">
                                     @if($item->getFirstMediaUrl())
                                         <div class="w-20 h-20 shrink-0 overflow-hidden rounded-lg border border-white/5 shadow-lg">
-                                            <img src="{{ $item->getFirstMediaUrl() }}" alt="{{ $item->name }}" class="w-full h-full object-cover transition-all duration-700 ease-in-out">
+                                            <img loading="lazy" src="{{ $item->getFirstMediaUrl() }}" alt="{{ $item->name }}" class="w-full h-full object-cover transition-all duration-700 ease-in-out">
                                         </div>
                                     @endif
                                     <div class="flex-grow pt-1">
@@ -222,7 +222,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 <div class="order-1 relative w-full flex justify-center">
                     <div class="aspect-[2/3] w-full max-w-[320px] lg:max-w-[360px] relative rounded-2xl overflow-hidden shadow-2xl border border-white/5">
-                        <img src="{{ isset($settings['barista_image']) ? asset('storage/' . $settings['barista_image']) : 'https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80' }}" alt="Baş Barista" class="w-full h-full object-cover transition-all duration-700">
+                        <img loading="lazy" src="{{ isset($settings['barista_image']) ? asset('storage/' . $settings['barista_image']) : 'https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80' }}" alt="Baş Barista" class="w-full h-full object-cover transition-all duration-700">
                     </div>
                     <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
                 </div>
