@@ -4,7 +4,7 @@ A luxurious, dark-themed, and highly responsive web application built for **The 
 
 ## 🚀 Tech Stack
 
-*   **Backend:** Laravel 11 (PHP 8.2+)
+*   **Backend:** Laravel 13 (PHP 8.2+)
 *   **Admin Panel:** FilamentPHP v3
 *   **Frontend:** Tailwind CSS v3, Alpine.js, Blade Components
 *   **Media Management:** Spatie Media Library (WebP, Responsive Images)
@@ -67,7 +67,8 @@ Follow these steps to run the project on your local machine:
 ## 📂 Project Structure
 
 *   pp/Filament/: Contains all Admin Panel resources (Menu, Gallery, Settings).
-*   esources/views/: Blade templates for the public UI (home.blade.php, menu.blade.php).
+*   
+esources/views/: Blade templates for the public UI (home.blade.php, menu.blade.php).
 *   	ailwind.config.js: Custom color palette and font configurations (Montserrat & Cormorant Garamond).
 
 ## 📄 License
