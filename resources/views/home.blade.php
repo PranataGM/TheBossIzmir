@@ -89,6 +89,11 @@
     <!-- About Section -->
     <section id="hakkimizda" class="relative min-h-[80vh] flex items-center justify-center py-20 bg-black overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="text-center flex flex-col items-center mb-16">
+                <span class="text-gold tracking-[0.2em] text-xs font-semibold uppercase mb-4 block">Hakkımızda</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-white font-light">İzmir'in En Prestijli <br><span class="italic text-gold">Nargile & Lounge</span> Deneyimi</h2>
+            </div>
+            
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                 <div class="relative">
                     <div class="aspect-[4/3] relative rounded-2xl overflow-hidden shadow-2xl">
@@ -96,9 +101,7 @@
                     </div>
                     <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
                 </div>
-                <div class="text-center flex flex-col items-center">
-                    <span class="text-gold tracking-[0.2em] text-xs font-semibold uppercase mb-4 block">Hakkımızda</span>
-                    <h2 class="font-serif text-4xl md:text-5xl text-white mb-8 font-light">İzmir'in En Prestijli <br><span class="italic text-gold">Nargile & Lounge</span> Deneyimi</h2>
+                <div class="text-left flex flex-col items-start justify-center">
                     <div class="space-y-6 text-zinc-400 font-light leading-relaxed">
                         <p>
                             The Boss Hookah & Lounge, standartların ötesinde bir deneyim arayanlar için tasarlandı. Modern mimarisi, VIP oyun alanları ve seçkin menüsüyle Bornova'da lüksün yeni adresi.
@@ -107,7 +110,7 @@
                             Dünyanın dört bir yanından özenle seçilmiş premium tütünlerimiz, alanında uzman nargile şeflerimizin sihirli dokunuşlarıyla eşsiz bir keyfe dönüşüyor.
                         </p>
                     </div>
-                    <div class="mt-12 flex gap-8 justify-center w-full">
+                    <div class="mt-12 flex gap-8 justify-start w-full">
                         <div>
                             <p class="text-4xl font-serif text-gold mb-2">10+</p>
                             <p class="text-xs uppercase tracking-widest text-zinc-500">Premium Marka</p>
@@ -225,11 +228,6 @@
     <!-- Barista / Team Section -->
     <section id="ekibimiz" class="relative min-h-[80vh] flex items-center justify-center py-20 bg-[#050505] overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div class="text-center flex flex-col items-center mb-16">
-                <span class="text-gold tracking-[0.2em] text-xs font-semibold uppercase mb-4 block">Ustalık ve Sanat</span>
-                <h2 class="font-serif text-4xl md:text-5xl text-white font-light">Baş Baristamızın <br><span class="italic text-gold">Özel Dokunuşu</span></h2>
-            </div>
-            
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 <div class="order-1 lg:order-2 relative w-full flex justify-center">
                     <div class="aspect-[2/3] w-full max-w-[320px] lg:max-w-[360px] relative rounded-2xl overflow-hidden shadow-2xl border border-white/5">
@@ -238,7 +236,9 @@
                     <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
                 </div>
 
-                <div class="order-2 lg:order-1 text-center flex flex-col items-center">
+                <div class="order-2 lg:order-1 text-left flex flex-col items-start justify-center">
+                    <span class="text-gold tracking-[0.2em] text-xs font-semibold uppercase mb-4 block">Ustalık ve Sanat</span>
+                    <h2 class="font-serif text-4xl md:text-5xl text-white mb-8 font-light">Baş Baristamızın <br><span class="italic text-gold">Özel Dokunuşu</span></h2>
                     <div class="space-y-6 text-zinc-400 font-light leading-relaxed">
                         <p>
                             Her bir içecek ve kokteylimiz, baristalarımızın tutkusu ve yıllara dayanan deneyimiyle hazırlanır. Sadece en kaliteli çekirdekleri ve malzemeleri kullanarak, her yudumda The Boss farkını hissetmenizi sağlıyoruz.
@@ -255,6 +255,14 @@
     <!-- Contact / Location -->
     <section id="rezervasyon" class="relative min-h-[80vh] flex items-center justify-center py-20 bg-[#0a0a0a] overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="text-center flex flex-col items-center mb-16">
+                <span class="text-gold tracking-[0.3em] uppercase text-xs mb-4 block">İletişim</span>
+                <h2 class="font-serif text-4xl text-white tracking-widest uppercase font-light mb-6">Bize Ulaşın</h2>
+                <p class="text-zinc-400 font-light text-sm tracking-wide leading-relaxed max-w-md mx-auto">
+                    Özel etkinlikler, rezervasyonlar ve sorularınız için bizimle iletişime geçebilirsiniz. Sizi The Boss'ta ağırlamaktan mutluluk duyarız.
+                </p>
+            </div>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
                 <div class="order-2 md:order-1 h-[500px] w-full border border-white/5 p-2 rounded-xl overflow-hidden bg-black/50">
                     @if(isset($settings['map_url']))
@@ -266,13 +274,7 @@
                     @endif
                 </div>
                 
-                <div class="order-1 md:order-2 text-center flex flex-col items-center">
-                    <span class="text-gold tracking-[0.3em] uppercase text-xs mb-4 block">İletişim</span>
-                    <h2 class="font-serif text-4xl text-white tracking-widest uppercase font-light mb-6">Bize Ulaşın</h2>
-                    <p class="text-zinc-400 font-light text-sm tracking-wide leading-relaxed max-w-md mx-auto mb-12">
-                        Özel etkinlikler, rezervasyonlar ve sorularınız için bizimle iletişime geçebilirsiniz. Sizi The Boss'ta ağırlamaktan mutluluk duyarız.
-                    </p>
-                    
+                <div class="order-1 md:order-2 flex flex-col items-center justify-center h-full">
                     <div class="space-y-10 text-center flex flex-col items-center">
                         <div>
                             <h4 class="text-gray-500 font-light tracking-[0.2em] text-xs uppercase mb-2">Telefon / Rezervasyon</h4>
