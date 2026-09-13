@@ -34,49 +34,49 @@
     </section>
 
     <!-- Highlights Section (Glassmorphism) -->
-    <section id="hizmetlerimiz" class="min-h-[80vh] flex items-center justify-center relative overflow-hidden bg-[#050505] border-y border-white/5 py-20">
+    <section id="hizmetlerimiz" class="flex items-center justify-center relative overflow-hidden bg-[#050505] border-y border-white/5 py-12 md:py-16">
         
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                 
                 <!-- Card 1: Hookah -->
-                <div class="group bg-black border border-white/10 rounded-2xl p-8 text-center transition-all duration-500 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-2 cursor-pointer">
-                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
+                <div class="group bg-black border border-white/10 rounded-2xl p-6 text-center transition-all duration-500 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-2 cursor-pointer">
+                    <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
                         <svg class="w-8 h-8 text-gold drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
                             <!-- Diamond Icon -->
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 8.25L12 2.25l8.25 6-8.25 13.5L3.75 8.25z" />
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 8.25h16.5M12 2.25v19.5M8.25 2.25l-4.5 6M15.75 2.25l4.5 6" />
                         </svg>
                     </div>
-                    <h3 class="font-serif text-xl text-white tracking-widest uppercase mb-4 font-light">Lüks Nargile</h3>
+                    <h3 class="font-serif text-xl text-white tracking-widest uppercase mb-3 font-light">Lüks Nargile</h3>
                     <p class="text-zinc-500 font-light text-xs md:text-sm tracking-wide leading-relaxed">
                         Dünyaca ünlü premium tütün markaları ve ustalarımızın özel karışımlarıyla eşsiz bir deneyim.
                     </p>
                 </div>
                 
                 <!-- Card 2: Games -->
-                <div class="group bg-black border border-white/10 rounded-2xl p-8 text-center transition-all duration-500 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-2 cursor-pointer">
-                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
+                <div class="group bg-black border border-white/10 rounded-2xl p-6 text-center transition-all duration-500 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-2 cursor-pointer">
+                    <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
                         <svg class="w-8 h-8 text-gold drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
                             <!-- Crown Icon -->
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M4 18l3-11 5 6 5-6 3 11z"></path>
                         </svg>
                     </div>
-                    <h3 class="font-serif text-xl text-white tracking-widest uppercase mb-4 font-light">Oyun Salonu</h3>
+                    <h3 class="font-serif text-xl text-white tracking-widest uppercase mb-3 font-light">Oyun Salonu</h3>
                     <p class="text-zinc-500 font-light text-xs md:text-sm tracking-wide leading-relaxed">
                         Okey, tavla ve modern kutu oyunları için ayrılmış VIP konforunda özel alanlar.
                     </p>
                 </div>
 
                 <!-- Card 3: Cafe -->
-                <div class="group bg-black border border-white/10 rounded-2xl p-8 text-center transition-all duration-500 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-2 cursor-pointer">
-                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
+                <div class="group bg-black border border-white/10 rounded-2xl p-6 text-center transition-all duration-500 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-2 cursor-pointer">
+                    <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
                         <svg class="w-8 h-8 text-gold drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
                             <!-- Wine Glass Icon -->
                             <path stroke-linecap="round" stroke-linejoin="round" d="M7 4h10M7 4c0 4 2.5 7 5 9v8M17 4c0 4-2.5 7-5 9M8 21h8"></path>
                         </svg>
                     </div>
-                    <h3 class="font-serif text-xl text-white tracking-widest uppercase mb-4 font-light">Cafe & Restoran</h3>
+                    <h3 class="font-serif text-xl text-white tracking-widest uppercase mb-3 font-light">Cafe & Restoran</h3>
                     <p class="text-zinc-500 font-light text-xs md:text-sm tracking-wide leading-relaxed">
                         Dünya mutfağından seçkin lezzetler ve usta barmenlerimizin elinden imza kokteyller.
                     </p>
