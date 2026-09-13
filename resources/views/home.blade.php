@@ -36,48 +36,48 @@
     <!-- Highlights Section (Glassmorphism) -->
     <section id="hizmetlerimiz" class="min-h-[80vh] flex items-center justify-center relative overflow-hidden bg-[#050505] border-y border-white/5 py-20">
         
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                 
                 <!-- Card 1: Hookah -->
-                <div class="group bg-black border border-white/10 rounded-2xl p-10 text-center transition-all duration-500 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-2 cursor-pointer">
-                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
-                        <svg class="w-10 h-10 text-gold drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+                <div class="group bg-black border border-white/10 rounded-2xl p-8 text-center transition-all duration-500 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-2 cursor-pointer">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
+                        <svg class="w-8 h-8 text-gold drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
                             <!-- Diamond Icon -->
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 8.25L12 2.25l8.25 6-8.25 13.5L3.75 8.25z" />
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 8.25h16.5M12 2.25v19.5M8.25 2.25l-4.5 6M15.75 2.25l4.5 6" />
                         </svg>
                     </div>
-                    <h3 class="font-serif text-2xl text-white tracking-widest uppercase mb-4 font-light">Lüks Nargile</h3>
-                    <p class="text-zinc-500 font-light text-sm tracking-wide leading-relaxed">
+                    <h3 class="font-serif text-xl text-white tracking-widest uppercase mb-4 font-light">Lüks Nargile</h3>
+                    <p class="text-zinc-500 font-light text-xs md:text-sm tracking-wide leading-relaxed">
                         Dünyaca ünlü premium tütün markaları ve ustalarımızın özel karışımlarıyla eşsiz bir deneyim.
                     </p>
                 </div>
                 
                 <!-- Card 2: Games -->
-                <div class="group bg-black border border-white/10 rounded-2xl p-10 text-center transition-all duration-500 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-2 cursor-pointer">
-                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
-                        <svg class="w-10 h-10 text-gold drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+                <div class="group bg-black border border-white/10 rounded-2xl p-8 text-center transition-all duration-500 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-2 cursor-pointer">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
+                        <svg class="w-8 h-8 text-gold drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
                             <!-- Crown Icon -->
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M4 18l3-11 5 6 5-6 3 11z"></path>
                         </svg>
                     </div>
-                    <h3 class="font-serif text-2xl text-white tracking-widest uppercase mb-4 font-light">Oyun Salonu</h3>
-                    <p class="text-zinc-500 font-light text-sm tracking-wide leading-relaxed">
+                    <h3 class="font-serif text-xl text-white tracking-widest uppercase mb-4 font-light">Oyun Salonu</h3>
+                    <p class="text-zinc-500 font-light text-xs md:text-sm tracking-wide leading-relaxed">
                         Okey, tavla ve modern kutu oyunları için ayrılmış VIP konforunda özel alanlar.
                     </p>
                 </div>
 
                 <!-- Card 3: Cafe -->
-                <div class="group bg-black border border-white/10 rounded-2xl p-10 text-center transition-all duration-500 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-2 cursor-pointer">
-                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
-                        <svg class="w-10 h-10 text-gold drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+                <div class="group bg-black border border-white/10 rounded-2xl p-8 text-center transition-all duration-500 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-2 cursor-pointer">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
+                        <svg class="w-8 h-8 text-gold drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
                             <!-- Wine Glass Icon -->
                             <path stroke-linecap="round" stroke-linejoin="round" d="M7 4h10M7 4c0 4 2.5 7 5 9v8M17 4c0 4-2.5 7-5 9M8 21h8"></path>
                         </svg>
                     </div>
-                    <h3 class="font-serif text-2xl text-white tracking-widest uppercase mb-4 font-light">Cafe & Restoran</h3>
-                    <p class="text-zinc-500 font-light text-sm tracking-wide leading-relaxed">
+                    <h3 class="font-serif text-xl text-white tracking-widest uppercase mb-4 font-light">Cafe & Restoran</h3>
+                    <p class="text-zinc-500 font-light text-xs md:text-sm tracking-wide leading-relaxed">
                         Dünya mutfağından seçkin lezzetler ve usta barmenlerimizin elinden imza kokteyller.
                     </p>
                 </div>
@@ -231,14 +231,14 @@
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                <div class="order-1 relative w-full flex justify-center">
+                <div class="order-1 lg:order-2 relative w-full flex justify-center">
                     <div class="aspect-[2/3] w-full max-w-[320px] lg:max-w-[360px] relative rounded-2xl overflow-hidden shadow-2xl border border-white/5">
                         <img loading="lazy" src="{{ isset($settings['barista_image']) ? asset('storage/' . $settings['barista_image']) : 'https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80' }}" alt="Baş Barista" class="w-full h-full object-cover transition-all duration-700">
                     </div>
                     <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
                 </div>
 
-                <div class="order-2 text-center flex flex-col items-center">
+                <div class="order-2 lg:order-1 text-center flex flex-col items-center">
                     <div class="space-y-6 text-zinc-400 font-light leading-relaxed">
                         <p>
                             Her bir içecek ve kokteylimiz, baristalarımızın tutkusu ve yıllara dayanan deneyimiyle hazırlanır. Sadece en kaliteli çekirdekleri ve malzemeleri kullanarak, her yudumda The Boss farkını hissetmenizi sağlıyoruz.
@@ -258,9 +258,9 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
                 <div class="order-2 md:order-1 h-[500px] w-full border border-white/5 p-2 rounded-xl overflow-hidden bg-black/50">
                     @if(isset($settings['map_url']))
-                        <iframe title="Google Maps Location" src="{{ $settings['map_url'] }}" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-1000"></iframe>
+                        <iframe title="Google Maps Location" src="{{ $settings['map_url'] }}" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full rounded-lg"></iframe>
                     @else
-                        <div class="w-full h-full bg-black flex items-center justify-center text-gray-600 font-light tracking-widest text-xs uppercase">
+                        <div class="w-full h-full rounded-lg bg-black flex items-center justify-center text-gray-600 font-light tracking-widest text-xs uppercase">
                             Harita Yüklenmedi
                         </div>
                     @endif
@@ -268,7 +268,10 @@
                 
                 <div class="order-1 md:order-2 text-center flex flex-col items-center">
                     <span class="text-gold tracking-[0.3em] uppercase text-xs mb-4 block">İletişim</span>
-                    <h2 class="font-serif text-4xl text-white tracking-widest uppercase font-light mb-12">Bize Ulaşın</h2>
+                    <h2 class="font-serif text-4xl text-white tracking-widest uppercase font-light mb-6">Bize Ulaşın</h2>
+                    <p class="text-zinc-400 font-light text-sm tracking-wide leading-relaxed max-w-md mx-auto mb-12">
+                        Özel etkinlikler, rezervasyonlar ve sorularınız için bizimle iletişime geçebilirsiniz. Sizi The Boss'ta ağırlamaktan mutluluk duyarız.
+                    </p>
                     
                     <div class="space-y-10 text-center flex flex-col items-center">
                         <div>
