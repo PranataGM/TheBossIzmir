@@ -96,6 +96,17 @@
                     </div>
                     <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
                 </div>
+                <div class="text-center flex flex-col items-center">
+                    <span class="text-gold tracking-[0.2em] text-xs font-semibold uppercase mb-4 block">Hakkımızda</span>
+                    <h2 class="font-serif text-4xl md:text-5xl text-white mb-8 font-light">İzmir'in En Prestijli <br><span class="italic text-gold">Nargile & Lounge</span> Deneyimi</h2>
+                    <div class="space-y-6 text-zinc-400 font-light leading-relaxed">
+                        <p>
+                            The Boss Hookah & Lounge, standartların ötesinde bir deneyim arayanlar için tasarlandı. Modern mimarisi, VIP oyun alanları ve seçkin menüsüyle Bornova'da lüksün yeni adresi.
+                        </p>
+                        <p>
+                            Dünyanın dört bir yanından özenle seçilmiş premium tütünlerimiz, alanında uzman nargile şeflerimizin sihirli dokunuşlarıyla eşsiz bir keyfe dönüşüyor.
+                        </p>
+                    </div>
                     <div class="mt-12 flex gap-8 justify-center w-full">
                         <div>
                             <p class="text-4xl font-serif text-gold mb-2">10+</p>
